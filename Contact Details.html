@@ -1,0 +1,64 @@
+<!-- - another way (seen in working example below from MDN docs) is to embed the header, body and footer altogether
+- expand hidden cells to see different ways to create a table. One method is independently creating header, body and gooter, allowing each to be changed -->
+
+<!-- forms - when craeting a form, it starts with a lablel and then the input atributes are provided. each element will act like another column unless a br (line break) is inserted -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Details</title>
+  </head>
+  <body>
+    <h3>Contact details</h3>
+    <table cellspacing="10">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="col">Name</th>
+          <td>Armand Sarkizians</td>
+        </tr>
+        <tr>
+        </tr>
+          <th scope="col">Email</th>
+          <td>jkjkjkjk@gmail.com</td>
+        <tr>
+          <th scope="col">Mobile</th>
+          <td>045656565</td>
+        </tr>
+      <tfoot>
+        <th>Office hours are 8am to 5pm</td>
+      </tfoot>
+    </table>
+    <br>
+    <hr>
+    <form action="mailto:asarki04@mail.bbk.ac.uk" method="post" enctype="text/plain">
+      <label>Your User Name:</label>
+      <input type="text" name="yourName" value=""><br>
+      <br>
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" value=""><br>
+      <br>
+      <label>Your Message: </label><br>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+      <br>
+      <label>Select date to be comtacted: </label>
+      <input type="date" name="dateContactRequest" value=""><br>
+      <br>
+      <input type="submit" name="" value="Submit"><br>
+      <br>
+      <label>Select time range to be contacted: </label>
+      <input type="range" name="" value=""><br>
+      <br>
+      <label>Click to opt out of advertising: </label>
+      <input type="checkbox" name="" value="">
+      <input type="submit" name="" value="submit"><br>
+    </form>
+  </body>
+</html>
